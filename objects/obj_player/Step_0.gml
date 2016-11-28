@@ -1,15 +1,26 @@
 /// @description Player control
-// You can write your code in this editor
+
+// Check Keys every frame
 leftKey = keyboard_check(vk_left);
 rightKey = keyboard_check(vk_right);
 upKey = keyboard_check(vk_up);
 
-if(place_meeting(x,y+1,obj_solid)){
-	onGround = true;
-} else {
-	onGround = false;
+switch(state){
+	case STATE_P_SPAWN:
+		player_spawn();
+		break;
+	case STATE_P_INVINCIBLE:
+		player_invincible();
+		break;
+	case STATE_P_FALLING:
+		player_falling();
+		break;
+	case STATE_P_STANDING:
+		player_standing();
+		break; 
+	case STATE_P_WALKING:
+		player_walking();
+		break;
 }
 
-if(rightKey){
-	physics_apply_force(x,y,walkingPower,0);
-}
+flip_dir(self);

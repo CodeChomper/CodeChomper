@@ -1,0 +1,1 @@
+self.state = STATE_P_INVINCIBLE;
