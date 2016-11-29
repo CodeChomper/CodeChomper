@@ -7,8 +7,8 @@
 #macro STATE_P_WALKING 4
 #macro STATE_P_ON_WALL 6
 #macro STATE_P_HURT 7
-#macro P_JUMP_FORCE -420
-#macro P_WALKING_POWER 700
+#macro P_JUMP_FORCE -520
+#macro P_WALKING_POWER 1000
 #macro P_GLIDE_POWER 300
 
 phy_fixed_rotation = true;
