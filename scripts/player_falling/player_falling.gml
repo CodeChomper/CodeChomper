@@ -8,9 +8,9 @@ var rightWall = false;
 if(abs(phy_speed_x) < maxXSpeed){
 
 	//Check if wall to the left
-	if(place_meeting(x-4,y,obj_wall_jump)) leftWall = true;
+	if(place_meeting(x-5,y,obj_wall_jump)) leftWall = true;
 	//Check if wall to right
-	if(place_meeting(x+4,y,obj_wall_jump)) rightWall = true;
+	if(place_meeting(x+5,y,obj_wall_jump)) rightWall = true;
 	
 	//Handle wall jump leftWall
 	if(leftWall && keyboard_check_released(vk_up)){
